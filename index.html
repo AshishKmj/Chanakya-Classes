@@ -1,5 +1,5 @@
 Exit code: 0
-Wall time: 1.3 seconds
+Wall time: 1.5 seconds
 Output:
 <!doctype html>
 <html lang="en" data-theme="light">
@@ -21,7 +21,7 @@ Output:
     @media(max-width:850px){.navlinks{display:none}.hamburger{display:block}.navlinks.open{display:flex;position:absolute;top:72px;left:0;right:0;background:var(--navy2);padding:22px;flex-direction:column;align-items:flex-start;border-radius:10px}.hero .wrap,.intro,.admission,.contact-card{grid-template-columns:1fr}.hero .wrap{min-height:790px}.hero-art{height:330px}.hero-photo{height:310px;width:230px;right:12%}.statbox,.features{grid-template-columns:repeat(2,1fr)}.course-grid,.quote-grid{grid-template-columns:1fr 1fr}.intro{gap:40px}.image-stack{height:390px}.image-stack img{height:350px}.admission{gap:35px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:span 2}}@media(max-width:520px){.wrap{width:min(100% - 28px,1150px)}.notice .wrap span:first-child{display:none}.notice .wrap{justify-content:center}.hero{min-height:720px}.hero .wrap{min-height:720px}.hero h1{font-size:3rem}.hero-art{display:none}.hero-copy{padding-top:100px}.hero-actions{align-items:flex-start;flex-direction:column}.statbox{grid-template-columns:1fr 1fr;padding:18px;gap:17px}.stat:nth-child(2){border:0}.course-grid,.quote-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.section{padding:75px 0}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:145px 145px 145px}.shot:first-child{grid-column:span 2;grid-row:auto}.checklist{grid-template-columns:1fr}.contact-card{padding:33px 22px;gap:28px}.foot{grid-template-columns:1fr}.foot>div:first-child{grid-column:auto}.bottom{display:block}.bottom span{display:block;margin:5px 0}}
   </style>
 </head>
-<body><div class="loader"><div></div></div>
+<body>
   <div class="notice"><div class="wrap"><span><b>Admissions open</b> for the 2026–27 academic session</span><span>☎ +91 7979724568 &nbsp; · &nbsp; Bettiah, Bihar</span></div></div>
   <header><nav class="wrap nav"><a class="brand" href="#home"><span class="mark">C</span><span>Chanakya Classes<small>By Manmit · Lycemit</small></span></a><div class="navlinks"><a href="#about">About</a><a href="#courses">Courses</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><button class="theme" aria-label="Toggle colour theme">◐</button><a class="btn" href="https://wa.me/917979724568" target="_blank">Apply now ↗</a></div><button class="hamburger" aria-label="Open menu">☰</button></nav></header>
   <main>
@@ -39,7 +39,7 @@ Output:
   <footer><div class="wrap"><div class="foot"><div><a class="brand" href="#home"><span class="mark">C</span><span>Chanakya Classes<small>By Manmit · Lycemit</small></span></a><p>Giving learners in Bettiah the clarity, discipline and confidence to build a bright future.</p></div><div><h4>Explore</h4><a href="#about">About us</a><a href="#courses">Courses</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div><div><h4>Visit us</h4><p>Supriya Cinema Rd, Shivpuri Colony,<br>Kamalnath Nagar, Bettiah, Bihar 845438</p><a href="https://wa.me/917979724568" target="_blank">WhatsApp us ↗</a></div></div><div class="bottom"><span>© <span id="year"></span> Chanakya Classes by Manmit.</span><span>Learn · Rise · Lead</span></div></div></footer>
   <button class="to-top" aria-label="Back to top">↑</button><div class="lightbox"><button class="close" aria-label="Close image">×</button><img alt="Gallery preview"></div>
   <script>
-    const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);window.addEventListener('load',()=>$('.loader').classList.add('hide'));$('#year').textContent=new Date().getFullYear();
+    const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);$('#year').textContent=new Date().getFullYear();
     $('.hamburger').onclick=()=>$('.navlinks').classList.toggle('open');$('.theme').onclick=()=>document.body.classList.toggle('dark');
     const top=$('.to-top');window.addEventListener('scroll',()=>top.classList.toggle('show',scrollY>500));top.onclick=()=>scrollTo({top:0,behavior:'smooth'});
     const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.classList.contains('statbox'))countUp()}}),{threshold:.16});$$('.reveal').forEach(e=>observer.observe(e));
